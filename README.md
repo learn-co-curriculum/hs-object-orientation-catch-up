@@ -1,3 +1,9 @@
+---
+tags: kids, oo
+languages: ruby
+level: 1
+type: catch-up
+---
 # Object Orientation Refresher
 
 A class is a sort of 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup.
