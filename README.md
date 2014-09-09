@@ -1,3 +1,9 @@
+---
+tags: kids, oo
+languages: ruby
+level: 1
+type: catch-up
+---
 # Object Orientation Refresher
 
 
