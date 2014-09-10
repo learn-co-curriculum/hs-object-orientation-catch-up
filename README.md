@@ -98,7 +98,7 @@ end
 ```
 
 Let's Put it all together:
-
+```RUBY
 class CoffeeCup
   def initialize(size)
     @size = size
