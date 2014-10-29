@@ -44,7 +44,7 @@ Note: We use `@variables` because they allow for variables to be accessed from d
 
 We can add an `initialize` method to run code whenever a new object is created using `.new` - It's like automatic code that gets run without being called explicitly.
 
-```RUBY
+```ruby
 class CoffeeCup
   def initialize
     @color = "white"
@@ -98,7 +98,7 @@ end
 ```
 
 Let's Put it all together:
-```RUBY
+```ruby
 class CoffeeCup
   def initialize(size)
     @size = size
