@@ -4,45 +4,43 @@ languages: ruby
 level: 1
 type: catch-up
 ---
-# Object Orientation Refresher
-
 
 ### Classes and Instances
 
-A class is a sort of 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup.
+<img src="https://after-school-assets.s3.amazonaws.com/coffee.gif" width="200px" align="right" hspace="10"> A class is a sort of 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup.
 
 ```ruby
 class CoffeeCup
 
 end
 ```
-To create an individual version (known as an *instance* or *object*) of our class, we use the `.new` method on the class to create the instance:
-```
+To create an individual version (known as an **instance** or **object**) of our class, we use the `.new` method on the class to create the instance:
+```ruby
 first_cup = CoffeeCup.new
 ```
 ### Attributes
 
-All objects can be described. For example, a coffee cup has a width, a height, a color, etc. We can add descriptors (known as *attributes*) to our model by using writer and reader methods. A writer is like a statement telling your object “You are this tall” or “Your color is blue”. A reader is more like a question asking the instance: “How tall are you?” or “What is your color?” A reader is usually a method that somehow describes the attribute, while a method uses the `=` with an argument to set or change the attribute.
+All objects have characteristics that make them unique. For example, a coffee cup has a width, a height, a color, etc. We can add characteristics (known as **attributes**) to our model by using **writer and reader methods**. A writer method is like a statement telling your object “You are this tall” or “Your color is blue.” A reader is more like a response to a question asking the instance: “How tall are you?” or “What is your color?” The reader replies, "I am 6 feet tall" or "I am blue." A reader is a method that describes the attribute, while a writer method uses the `=` with an argument to set or change the attribute.
 
-A writer that takes in a color as an argument and sets it to the @color variable:
-```
+Here is a writer that takes in a color as an argument and sets it to the `@color` variable:
+```ruby
 def color=(color)
   @color = color
 end
 ```
 
-A reader that returns the @color variable:
-```
+Here is a reader that returns the `@color` variable:
+```ruby
 def color
   @color
 end
 ```
 
-Note: We use `@variables` because they allow for variables to be accessed from different methods, as opposed to `variables` (without the @ sign) that are local in scope and can't be read between methods.
+Note: We use `@variables`, known as **instance variables**, because they allow variables to be accessed from different methods, as opposed to `variables` (without the @ sign), known as **local variables**, that are local in scope and can't be read by different methods.
 
 ### Initialize
 
-We can add an `initialize` method to run code whenever a new object is created using `.new` - It's like automatic code that gets run without being called explicitly.
+We can add an `initialize` method to run whenever a new object is made. It's automatic code that gets run without being called explicitly. Whenever you create a new instance of a class with the `new` method, `initialize` is automatically called the moment that object is created.
 
 ```ruby
 class CoffeeCup
@@ -58,23 +56,29 @@ class CoffeeCup
     @color
   end
 end
-```
-In the example above, when a new instance of CoffeeCup is created, it *automatically* has its color attribute set to white, because we set it in the initialize method. (This makes sense, because coffee cups are always white until they get painted!)
 
-You can also set your initialize method to take in arguments. For example, when a new cup is created, it has a size from the start. We want to be able to create an instance of a large cup by running `CoffeeCup.new("Large")`. TO do this, we add an argument to the initialize method:
-
+my_cup = CoffeeCup.new
 ```
-def initialize(size)
-  @size = size
-  @color = "white"
-end  
+In the example above, when a new instance of CoffeeCup is created, it *automatically* has its color attribute set to `"white"`, because we set it in the `initialize` method. (This makes sense, because coffee cups are always white until they get painted!)
+
+You can also set your `initialize` method to take in arguments. For example, when a new cup is created, it has a size from the start. That size is set by passing an argument like so: `CoffeeCup.new("Large")`. The parameters are defined in the  `initialize` method like so:
+
+```ruby
+class CoffeeCup
+  def initialize(size)
+    @size = size
+    @color = "white"
+  end
+end
+
+my_cup = CoffeeCup.new("Large")
 ```
 
 ### Object Actions
 
-Not only do objects have attributes (descriptors), they also have *actions*. For example, you can have an action called `spill` on the coffee cup class that changes an attribute called `current_volume` to "empty" or 0. Actions are methods that change the object itself or other objects that it interacts with.
+Not only do objects have attributes (characteristics), they also have **actions**. For example, you can have an action called `spill` on the coffee cup class that changes an attribute called `current_volume` to `"empty"` or `0`. Actions are methods that change the object itself or other objects that it interacts with.
 
-```
+```ruby
 class CoffeeCup
 
   def current_volume=(volume)
@@ -141,11 +145,11 @@ end
 
 ```
 
-Now we can create a new coffee cup instance:
+Now, we can create a new coffee cup instance:
 
-```
+```ruby
  my_cup = CoffeeCup.new("Medium")
- my_cup.color #=> returns "white" becuase it is set in initialize
+ my_cup.color #=> returns "white" because it is set in initialize
  my_cup.size #=> returns "medium"
  my_cup.color="red"
  my_cup.color #=> returns "red"
