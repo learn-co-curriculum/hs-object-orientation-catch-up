@@ -7,7 +7,7 @@ type: catch-up
 
 ### Classes and Instances
 
-<img src="https://after-school-assets.s3.amazonaws.com/coffee.gif" width="300px" align="right" hspace="10"> A class is a 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup:
+<img src="https://after-school-assets.s3.amazonaws.com/coffee.gif" width="300px" align="right" hspace="10">YOYO A class is a 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup:
 
 ```ruby
 class CoffeeCup
