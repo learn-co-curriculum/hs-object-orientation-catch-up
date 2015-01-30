@@ -9,6 +9,8 @@ type: catch-up
 
 <img src="https://after-school-assets.s3.amazonaws.com/coffee.gif" width="300px" align="right" hspace="10">A class is a 'blueprint' or 'template' for making standardized versions of items. Any object in the real world can be modeled as an object in code. For example, here's a model for a coffee cup:
 
+YOYOYOYO
+
 ```ruby
 class CoffeeCup
 
