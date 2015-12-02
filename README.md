@@ -155,3 +155,5 @@ Now, we can create a new coffee cup instance:
 ```
 
 Check out the resources section for more on Object Orientation!
+
+<a href='https://learn.co/lessons/hs-object-orientation-catch-up' data-visibility='hidden'>View this lesson on Learn.co</a>
