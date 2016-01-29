@@ -156,4 +156,4 @@ Now, we can create a new coffee cup instance:
 
 Check out the resources section for more on Object Orientation!
 
-<a href='https://learn.co/lessons/hs-object-orientation-catch-up' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-object-orientation-catch-up' title='Classes and Instances'>Classes and Instances</a> on Learn.co and start learning to code for free.</p>
